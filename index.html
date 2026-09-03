@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NanoRevenue</title>
+<meta name="description" content="NanoRevenue builds pay-per-use machine services for the agent economy. Software sets a price; software pays it; work gets done.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --plane: #f9f9f7; --surface: #fcfcfb;
+    --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+    --border: rgba(11,11,11,0.10); --accent: #2a78d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      --plane: #0d0d0d; --surface: #1a1a19;
+      --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+      --border: rgba(255,255,255,0.10); --accent: #3987e5;
+    }
+  }
+  :root[data-theme="dark"] {
+    --plane: #0d0d0d; --surface: #1a1a19;
+    --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+    --border: rgba(255,255,255,0.10); --accent: #3987e5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--plane); color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 16px; line-height: 1.6;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 64px 20px 80px; }
+  .eyebrow { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+  h1 { font-size: 34px; margin: 6px 0 10px; line-height: 1.15; letter-spacing: -0.01em; }
+  .lede { color: var(--ink-2); font-size: 18px; margin: 0 0 8px; }
+  .ladder { color: var(--muted); font-size: 14px; margin: 18px 0 34px; }
+  .machine {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 18px 20px; margin: 14px 0;
+  }
+  .machine h2 { font-size: 17px; margin: 0 0 4px; }
+  .machine p { margin: 0 0 8px; color: var(--ink-2); font-size: 14px; }
+  .machine .doors { font-size: 13px; color: var(--muted); }
+  .machine a { color: var(--accent); text-decoration: none; }
+  .machine a:hover { text-decoration: underline; }
+  .tag {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.05em; text-transform: uppercase;
+    color: var(--muted); border: 1px solid var(--border);
+    border-radius: 999px; padding: 2px 9px; margin-left: 8px; vertical-align: middle;
+  }
+  footer { margin-top: 44px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--border); padding-top: 18px; }
+  footer a { color: var(--ink-2); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">NanoRevenue</div>
+  <h1>Building for the Machine Economy</h1>
+  <p class="lede">We build small, reliable, pay-per-use services that software agents
+  can discover, pay, and consume — no signups, no subscriptions, no humans in the loop.</p>
+  <p class="ladder">Humans set goals. Agents perform work. x402 moves value.</p>
+
+  <div class="machine">
+    <h2>Business Verification Machine <span class="tag">live · Base mainnet</span></h2>
+    <p>Does this business check out? Send a name and state, get a machine-readable
+    verdict: state-registry status, website-alive, address validation, phone
+    plausibility — with confidence score and flags. Built entirely on public
+    government records (registry coverage: NY, CO, PA, OR, CT).</p>
+    <p class="doors">
+      $0.10/call via x402 · free tier 5/day ·
+      <a href="https://business-verification-machine.onrender.com" rel="noopener">endpoint</a> ·
+      <a href="https://business-verification-machine.onrender.com/docs" rel="noopener">docs</a>
+    </p>
+  </div>
+
+  <div class="machine">
+    <h2>Dividend Safety Machine <span class="tag">preview</span></h2>
+    <p>Dividend safety snapshots for US stocks: verdict, 0–100 score, ex-dividend
+    dates, payout ratios, streaks, red flags — computed from a transparent,
+    documented rubric.</p>
+    <p class="doors">
+      preview on Base Sepolia testnet ·
+      <a href="https://dividend-safety-machine.onrender.com" rel="noopener">endpoint</a> ·
+      <a href="https://dividend-safety-machine.onrender.com/docs" rel="noopener">docs</a>
+    </p>
+  </div>
+
+  <footer>
+    NanoRevenue is a product line of Osika LLC ·
+    <a href="mailto:andreu.osika@gmail.com">contact</a> ·
+    machines pay to <a href="https://basescan.org/address/0x91173e7489b91229f4a056a69a2b8daec35382da" rel="noopener">nanorevenue.base.eth</a>
+  </footer>
+</div>
+</body>
+</html>

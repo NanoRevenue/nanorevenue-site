@@ -1,0 +1,32 @@
+[
+  {
+    "id": "business-verification-machine",
+    "name": "Business Verification Machine",
+    "type": "Verification API",
+    "description": "Does this business check out? State-registry status (NY/CO/PA/OR/CT), website-alive, address validation, phone plausibility.",
+    "baseUrl": "https://business-verification-machine.onrender.com",
+    "host": "Render (free)",
+    "deployed": "2026-08-27",
+    "launched": "2026-09-03",
+    "gate_days": 90,
+    "network": "Base mainnet",
+    "price_usd": 0.10,
+    "monthly_cost_usd": 0,
+    "repo": "https://github.com/NanoRevenue/business-verification-machine"
+  },
+  {
+    "id": "dividend-safety-machine",
+    "name": "Dividend Safety Machine",
+    "type": "Data API",
+    "description": "Dividend safety snapshots: verdict, 0-100 score, ex-dividend dates, payout ratios, streaks, red flags.",
+    "baseUrl": "https://dividend-safety-machine.onrender.com",
+    "host": "Render (free)",
+    "deployed": "2026-08-25",
+    "launched": null,
+    "gate_days": 90,
+    "network": "Base Sepolia testnet (parked)",
+    "price_usd": 0.03,
+    "monthly_cost_usd": 0,
+    "repo": "https://github.com/NanoRevenue/dividend-safety-machine"
+  }
+]
